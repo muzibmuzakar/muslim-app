@@ -1,4 +1,4 @@
-import AsmaulHusnaGrid from '../components/AsmaulHusnaGrid';
+import AsmaulHusnaGrid from '../components/asmaulhusna/AsmaulHusnaGrid';
 import AsmaulBanner from '../components/shared/AsmaulBanner';
 import { AsmaulProvider } from '../context/AsmaulContext';
 

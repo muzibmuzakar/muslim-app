@@ -26,7 +26,7 @@ export const projectsData = [
 		id: 2,
 		title: 'Doa Harian',
 		img: Doa,
-		link: 'asmaul-husna'
+		link: 'doa-harian'
 	},
 	{
 		id: 3,

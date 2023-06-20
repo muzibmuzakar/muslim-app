@@ -7,6 +7,7 @@ import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
 import Asmaul from './pages/Asmaul';
+import DoaHarian from './pages/DoaHarian';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -33,6 +34,10 @@ function App() {
 							<Route
 								path="asmaul-husna"
 								element={<Asmaul />}
+							/>
+							<Route
+								path="doa-harian"
+								element={<DoaHarian />}
 							/>
 
 							<Route path="about" element={<About />} />

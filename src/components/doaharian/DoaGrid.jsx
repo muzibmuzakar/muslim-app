@@ -1,20 +1,20 @@
 import { useContext } from 'react';
 import { FiSearch } from 'react-icons/fi';
-import AsmaulHusnaSingle from './AsmaulHusnaSingle';
-import { AsmaulContext } from '../context/AsmaulContext';
+import { DoaContext } from '../../context/DoaContext';
+import DoaSingle from './DoaSingle';
 
-const AsmaulHusnaGrid = () => {
+const DoaGrid = () => {
   const {
-    asmaulHusna,
-    searchAsmaul,
-    setSearchAsmaul,
-    searchAsmaulByTitle,
-  } = useContext(AsmaulContext);
+    doa,
+    searchDoa,
+    setSearchDoa,
+    searchDoaByTitle,
+  } = useContext(DoaContext);
 
   return (
-    <section className="py-5 sm:py-10 mt-5">
+    <section className="py-5">
 
-      <div className="mt-5 sm:mt-16">
+      <div className="mt-5">
         <div className="flex justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-3">
           <div className="flex justify-between gap-2">
             <span className="bg-primary-light dark:bg-slate-800 p-2.5 shadow-sm rounded-xl cursor-pointer">
@@ -22,7 +22,7 @@ const AsmaulHusnaGrid = () => {
             </span>
             <input
               onChange={(e) => {
-                setSearchAsmaul(e.target.value);
+                setSearchDoa(e.target.value);
               }}
               className="font-general-medium pl-3 pr-1 sm:px-4 py-2 border border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-slate-800 text-primary-dark dark:text-ternary-light"
               id="name"
@@ -37,19 +37,21 @@ const AsmaulHusnaGrid = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-        {searchAsmaul
-          ? searchAsmaulByTitle.map((asmaul) => (
-              <AsmaulHusnaSingle
-                name={asmaul.arabic}
-                translation={asmaul.latin}
-                key={asmaul.number}
+        {searchDoa
+          ? searchDoaByTitle.map((doa) => (
+              <DoaSingle
+                name={doa.name}
+                arabic={doa.arabic}
+                translation={doa.translation}
+                key={doa.number}
               />
             ))
-          : asmaulHusna.map((asmaul) => (
-              <AsmaulHusnaSingle
-                name={asmaul.arabic}
-                translation={asmaul.latin}
-                key={asmaul.number}
+          : doa.map((doa) => (
+              <DoaSingle
+                name={doa.name}
+                arabic={doa.arabic}
+                translation={doa.translation}
+                key={doa.number}
               />
             ))}
       </div>
@@ -57,4 +59,4 @@ const AsmaulHusnaGrid = () => {
   );
 };
 
-export default AsmaulHusnaGrid;
+export default DoaGrid;
