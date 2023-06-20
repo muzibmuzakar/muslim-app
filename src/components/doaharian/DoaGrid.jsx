@@ -14,9 +14,9 @@ const DoaGrid = () => {
   return (
     <section className="py-5">
 
-      <div className="mt-5">
+      <div className="mt-2">
         <div className="flex justify-between border-b border-primary-light dark:border-secondary-dark pb-3 gap-3">
-          <div className="flex justify-between gap-2">
+          <div className="flex justify-between gap-2 w-full">
             <span className="bg-primary-light dark:bg-slate-800 p-2.5 shadow-sm rounded-xl cursor-pointer">
               <FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5" />
             </span>
@@ -24,7 +24,7 @@ const DoaGrid = () => {
               onChange={(e) => {
                 setSearchDoa(e.target.value);
               }}
-              className="font-general-medium pl-3 pr-1 sm:px-4 py-2 border border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-secondary-light dark:bg-slate-800 text-primary-dark dark:text-ternary-light"
+              className="font-general-medium w-full pl-3 pr-1 sm:px-4 py-2 border border-gray-200 dark:border-secondary-dark rounded-lg text-sm sm:text-md bg-primary-light dark:bg-slate-800 text-primary-dark dark:text-ternary-light"
               id="name"
               name="name"
               type="search"
