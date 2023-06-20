@@ -8,6 +8,7 @@ import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
 import Asmaul from './pages/Asmaul';
 import DoaHarian from './pages/DoaHarian';
+import NiatSholat from './pages/NiatSholat';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -38,6 +39,10 @@ function App() {
 							<Route
 								path="doa-harian"
 								element={<DoaHarian />}
+							/>
+							<Route
+								path="niat-sholat"
+								element={<NiatSholat />}
 							/>
 
 							<Route path="about" element={<About />} />

@@ -30,9 +30,9 @@ export const projectsData = [
 	},
 	{
 		id: 3,
-		title: 'Bacaan Sholat',
+		title: 'Niat Sholat',
 		img: Sholat,
-		link: 'asmaul-husna'
+		link: 'niat-sholat'
 	},
 	{
 		id: 4,
