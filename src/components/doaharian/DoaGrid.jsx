@@ -29,7 +29,7 @@ const DoaGrid = () => {
               name="name"
               type="search"
               required=""
-              placeholder="Search Asmaul Husna"
+              placeholder="Search Doa"
               aria-label="Name"
             />
           </div>
