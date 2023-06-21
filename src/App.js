@@ -10,6 +10,7 @@ import Alquran from './pages/Alquran';
 import Asmaul from './pages/Asmaul';
 import DoaHarian from './pages/DoaHarian';
 import NiatSholat from './pages/NiatSholat';
+import Surah from './pages/Surah';
 
 const About = lazy(() => import('./pages/AboutMe'));
 const Contact = lazy(() => import('./pages/Contact.jsx'));
@@ -48,6 +49,10 @@ function App() {
 							<Route
 								path="niat-sholat"
 								element={<NiatSholat />}
+							/>
+							<Route
+								path="surah"
+								element={<Surah />}
 							/>
 
 							<Route path="about" element={<About />} />
