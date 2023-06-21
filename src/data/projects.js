@@ -20,7 +20,7 @@ export const projectsData = [
 		id: 1,
 		title: 'Al Quran',
 		img: Alquran,
-		link: 'asmaul-husna'
+		link: 'al-quran'
 	},
 	{
 		id: 2,

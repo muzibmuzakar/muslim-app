@@ -6,6 +6,7 @@ import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import UseScrollToTop from './hooks/useScrollToTop';
+import Alquran from './pages/Alquran';
 import Asmaul from './pages/Asmaul';
 import DoaHarian from './pages/DoaHarian';
 import NiatSholat from './pages/NiatSholat';
@@ -31,6 +32,10 @@ function App() {
 							<Route
 								path="projects/single-project"
 								element={<ProjectSingle />}
+							/>
+							<Route
+								path="al-quran"
+								element={<Alquran />}
 							/>
 							<Route
 								path="asmaul-husna"
