@@ -51,7 +51,7 @@ function App() {
 								element={<NiatSholat />}
 							/>
 							<Route
-								path="surah"
+								path="al-quran/surah"
 								element={<Surah />}
 							/>
 
