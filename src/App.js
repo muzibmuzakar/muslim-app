@@ -50,8 +50,13 @@ function App() {
 								path="niat-sholat"
 								element={<NiatSholat />}
 							/>
-							<Route
+							{/* <Route
 								path="al-quran/surah"
+								element={<Surah />}
+							/> */}
+							
+							<Route
+								path="al-quran/:number"
 								element={<Surah />}
 							/>
 

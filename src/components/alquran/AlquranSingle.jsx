@@ -12,7 +12,7 @@ const AlquranSingle = ({ number, name, arabic, translation, ayat }) => {
         delay: 0.15,
       }}
     >
-      <Link to={"surah"}>
+      <Link to={`${number}`}>
       <div className="rounded-md shadow-lg hover:shadow-xl cursor-pointer px-4 mb-10 sm:mb-0 bg-secondary-light dark:bg-slate-800">
         <div className="flex flex-row justify-between items-center">
           <div className="w-10 h-10 rounded-md bg-surah bg-cover bg-center flex items-center justify-center">
