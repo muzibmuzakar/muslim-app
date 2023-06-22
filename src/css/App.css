@@ -206,7 +206,7 @@ body {
 
 /* Scroll to top style */
 .scrollToTop {
-	@apply bg-indigo-600;
+	@apply bg-[#34b3f1];
 	@apply text-white;
 	position: fixed;
 	width: 100%;

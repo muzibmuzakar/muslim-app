@@ -32,7 +32,7 @@ const Surah = () => {
         // Tampilkan animasi loading jika data masih dalam proses fetching
         <div className="flex items-center justify-center h-screen">
           <motion.div
-            className="w-10 h-10 border-4 border-t-[#3498db] rounded-full animate-spin"
+            className="w-10 h-10 border-4 border-t-[#34b3f1] rounded-full animate-spin"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.3 }}
